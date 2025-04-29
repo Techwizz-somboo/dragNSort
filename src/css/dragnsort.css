@@ -1,0 +1,83 @@
+[draggable] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.drag-list {
+    overflow: hidden;
+    margin: 10px auto;
+    width: 100%;
+    /*border: 1px solid #ccc;*/
+    height: fit-content;
+}
+
+.drag-item {
+    position: relative;
+    float: left;
+    padding: 10px 10px;
+    text-align: center;
+    color: #555;
+    background: transparent;
+    /*border: 1px solid #ccc;*/
+    box-sizing: border-box;
+    transition: 0.25s;
+}
+
+.drag-w25 {
+    width: 25%;
+}
+
+.drag-w33 {
+    width: 33.33%;
+}
+
+.drag-w50 {
+    width: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .drag-w25 {
+        width: 50%;
+    }
+
+    .drag-w33 {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .drag-w25 {
+        width: 100%;
+    }
+
+    .drag-w33 {
+        width: 100%;
+    }
+
+    .drag-w50 {
+        width: 100%;
+    }
+}
+
+.drag-icon {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: move;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="%23ccc"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.drag-start {
+    opacity: 0.8;
+}
+
+.drag-enter {
+    opacity: 0.5;
+    transform: scale(0.9);
+}

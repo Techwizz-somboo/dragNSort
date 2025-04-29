@@ -1,0 +1,24 @@
+{
+  "name": "@techwizz/dragnsort",
+  "version": "1.0.0",
+  "description": "Add a draggable/sortable grid to your website!",
+  "main": "index.js",
+  "homepage": "https://dragnsort.dev/",
+  "repository": "https://github.com/Techwizz-somboo/dragnsort/",
+  "author": "Paul Black",
+  "license": "MIT",
+  "scripts": {
+    "dist": "yarn run dist:js && yarn run dist:css",
+    "dist:js": "babel src/js -d dist/js",
+    "dist:css": "postcss src/css -u cssnano -d dist/css"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "babel-plugin-add-header-comment": "^1.0.3",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1"
+  }
+}
