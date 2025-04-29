@@ -7,7 +7,7 @@ dragNSort is an awesome frontend library to add a draggable grid to your website
 You can include dragNSort with yarn:
 
 ```bash
-yarn add dragnsort
+yarn add @techwizz/dragnsort
 ```
 
 You may also download a release from [GitHub](https://github.com/Techwizz-somboo/dragnsort/releases) or [dragnsort.dev](https://dragnsort.dev).
@@ -74,3 +74,5 @@ If you have themify added to your project, this will use the `ti-move` icon.
 ## Notes
 
 dragNSort **IS** mobile and tablet resposive! Grid item sizes automatically change when the screen size gets too small.
+
+This README is up to date as of version 1.0.0.
